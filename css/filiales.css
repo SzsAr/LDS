@@ -1,0 +1,39 @@
+#seccion1 .nombre_filial{
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    text-align: center;
+}
+.green{
+    color: green;
+}
+.container_filiales{
+    margin: 2em auto;
+    width: 80%;
+}
+.imagen_filial{
+    width: 40em;
+    margin-top: 2em;
+    transition: transform 1s;
+}
+.filial{
+    width: 40%;
+    display: inline-block;
+    margin: 2em;
+}
+.imagen_filial:hover{
+    transform: scale(1.2);
+}
+
+
+@media (min-width: 426px) and (max-width: 768px){
+    .filial{
+        margin: 1em;
+    }
+    
+}
+@media (max-width: 425px){
+    .filial{
+        width: 80%;
+        margin: 0.5em;
+    }
+}

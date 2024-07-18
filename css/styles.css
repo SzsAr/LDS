@@ -1,0 +1,146 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;    
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(0, 0, 0);
+}
+img{
+    max-width: 100%;
+}
+.containernav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    background-color: rgb(58, 109, 7);
+    position: fixed;
+    width: 100%;
+}
+.containernav li{
+    list-style-type: none;
+}
+.lds{
+    width: 4em;
+    transition: transform .2s;
+}
+.lds:hover{
+    transform: scale(1.4);
+}
+nav ul{
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 2em;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(52, 204, 62);
+    font-weight: bold;
+    font-size: 2em;
+}
+nav ul li a:hover{
+    color: white;
+}
+
+#seccion1{
+    background: linear-gradient(to right, transparent, rgb(161, 159, 159)),
+    url("../img/los-del-sur-nacional.jpg");
+    background-size: cover;
+    background-repeat: none;
+    text-align: center;
+
+}
+.yellow{
+    color: yellow;
+}
+.blue{
+    color: blue;
+}
+.red{
+    color: red;
+}
+.tittle{
+    padding: 4em 0;
+    font-size: 3em;
+    background-color: rgba(0, 128, 0, 0.259);
+    text-shadow: 1px 1px 2px rgb(11, 133, 0);
+}
+.subtittle{
+    font-size:2em ;
+    background-color: rgba(255, 255, 255, 0.205);
+}
+.filiales{
+    font-size: 2em;
+}
+.imagenes_lds{
+    width: 40%;
+    display: inline-block;
+    margin: 5em;
+    transition: transform .2s;
+}
+.imagenes_lds:hover{
+    transform: scale(1.2);
+}
+
+footer{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    color:green;
+    padding: 3em;
+    text-decoration: none;
+    text-align: center;
+}
+
+footer i{
+    font-size: 2em;
+    margin: 0.5em 0.5em;
+    color: green;
+}
+footer a{
+    text-decoration: none;
+}
+
+@media (min-width: 769px) and (max-width: 1440px){
+    .imagenes_lds{
+        width: 30%;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px){
+    nav ul li{
+        margin: 0 2em;
+    }
+    nav ul li a{
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+    .lds{
+        width: 3em;
+    }
+    .imagenes_lds{
+        width: 50%;
+    }
+}
+@media (max-width: 425px){
+    nav ul li{
+        margin: 0 1em;
+    }
+    nav ul li a{
+        font-weight: bold;
+        font-size: 0.8em;
+
+    }
+    .lds{
+        width: 2em;
+    }
+    .imagenes_lds{
+        width: 60%;
+        margin: 3em;
+    }
+}
